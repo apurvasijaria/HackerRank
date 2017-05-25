@@ -1,0 +1,18 @@
+#!/bin/python
+//https://www.hackerrank.com/challenges/time-conversion
+
+import sys
+
+
+time = raw_input().strip()
+t=time.split(':')
+hr=t[0]
+mm=t[1]
+p=t[2]
+ss=p[:2]
+n=p[2:]
+#print n
+if(n=='PM'):
+    h=int(hr)+12
+    hr=str(h)
+print ':'.join([hr,mm,ss])
